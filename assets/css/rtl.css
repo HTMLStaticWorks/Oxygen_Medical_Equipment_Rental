@@ -1,0 +1,75 @@
+/* ==========================================================================
+   OXYGEN & MEDICAL EQUIPMENT RENTAL - RTL OVERRIDES
+   ========================================================================== */
+
+[dir="rtl"] body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+/* Base text alignment switches if any browser defaults override it */
+[dir="rtl"] text-align-left {
+  text-align: right;
+}
+[dir="rtl"] text-align-right {
+  text-align: left;
+}
+
+/* Nav Menu Position for RTL (Slide in from Left instead of Right) */
+@media (max-width: 1024px) {
+  [dir="rtl"] .nav-menu {
+    right: auto;
+    left: -100%;
+    transition: left 0.4s ease;
+  }
+  
+  [dir="rtl"] .nav-menu.active {
+    right: auto;
+    left: 0;
+  }
+}
+
+/* Hero Badge Position Swap */
+@media (min-width: 1025px) {
+  [dir="rtl"] .hero-badge {
+    left: auto;
+    right: -2rem;
+  }
+}
+
+/* Border shifts */
+[dir="rtl"] .coverage-info-box {
+  border-left: none;
+  border-right: 4px solid var(--primary);
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+[dir="rtl"] .footer-heading::after {
+  left: auto;
+  right: 0;
+}
+
+/* Password Toggle Icon Alignment */
+[dir="rtl"] .password-toggle-btn {
+  right: auto;
+  left: 1.25rem;
+}
+
+/* Flipping icons where necessary */
+[dir="rtl"] .btn svg.arrow-right,
+[dir="rtl"] .nav-link svg.arrow-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .coverage-item svg,
+[dir="rtl"] .pricing-feature-item svg,
+[dir="rtl"] .footer-contact-item svg {
+  transform: scaleX(-1);
+}
+
+/* Form layout adjustment if columns need direct swap (CSS Grid handles this automatically with direction: rtl) */

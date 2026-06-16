@@ -1,0 +1,112 @@
+/* ==========================================================================
+   OXYGEN & MEDICAL EQUIPMENT RENTAL - DARK MODE VARIABLES & OVERRIDES
+   ========================================================================== */
+
+body.dark-mode {
+  /* Color Palette - Dark Mode overrides */
+  --primary: #3b82f6;          /* Lighter blue for dark background */
+  --primary-hover: #60a5fa;
+  --primary-rgb: 59, 130, 246;
+  
+  --secondary: #14b8a6;        /* Lighter teal */
+  --secondary-hover: #2dd4bf;
+  --secondary-rgb: 20, 184, 166;
+  
+  --accent: #f43f5e;
+  
+  --bg-body: #090d16;          /* Deep dark slate */
+  --bg-card: #111827;          /* Dark gray card background */
+  --bg-header: rgba(9, 13, 22, 0.85);
+  --bg-footer: #030712;        /* Pure dark background for footer */
+  
+  --text-main: #f3f4f6;        /* Near white */
+  --text-muted: #9ca3af;       /* Soft gray */
+  --text-inverse: #090d16;
+  
+  --border: #1f2937;           /* Darker borders */
+  --border-focus: #3b82f6;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  
+  /* Additional dark-specific custom property overrides */
+}
+
+/* Adjustments for dark mode elements */
+body.dark-mode .btn-outline {
+  color: var(--text-main);
+  border-color: var(--border);
+}
+
+body.dark-mode .btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: rgba(var(--primary-rgb), 0.1);
+}
+
+body.dark-mode .btn-social {
+  background-color: var(--bg-body);
+}
+
+body.dark-mode .btn-social:hover {
+  background-color: rgba(var(--primary-rgb), 0.1);
+}
+
+body.dark-mode .header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .contact-icon {
+  background-color: rgba(var(--primary-rgb), 0.15);
+}
+
+body.dark-mode .hero-badge {
+  background-color: var(--bg-card);
+  border-color: var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .hero-badge-icon {
+  background-color: rgba(var(--secondary-rgb), 0.15);
+}
+
+body.dark-mode .coverage-map-wrapper {
+  background-color: var(--bg-card);
+  border-color: var(--border);
+}
+
+body.dark-mode .coverage-map-svg {
+  background-color: rgba(var(--primary-rgb), 0.04);
+}
+
+body.dark-mode .insurance-badge {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .cta-btn-wrapper .btn-call {
+  background-color: var(--text-main);
+  color: var(--bg-body);
+}
+
+body.dark-mode .cta-btn-wrapper .btn-call:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+}
+
+/* Inputs on dark mode */
+body.dark-mode input:-webkit-autofill,
+body.dark-mode input:-webkit-autofill:hover,
+body.dark-mode input:-webkit-autofill:focus,
+body.dark-mode textarea:-webkit-autofill,
+body.dark-mode textarea:-webkit-autofill:hover,
+body.dark-mode textarea:-webkit-autofill:focus,
+body.dark-mode select:-webkit-autofill,
+body.dark-mode select:-webkit-autofill:hover,
+body.dark-mode select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text-main) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg-body) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

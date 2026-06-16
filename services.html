@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OxyMed | Rental Equipment Catalog</title>
+  <meta name="description" content="Browse our medical equipment rental categories. High-quality oxygen concentrators, mobility aids, hospital furniture, and respiratory devices.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="navLogo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8" fill="none"/>
+          <path d="M50 20 C65 40 75 55 75 68 C75 80 64 90 50 90 C36 90 25 80 25 68 C25 55 35 40 50 20 Z" fill="var(--secondary)" opacity="0.85"/>
+          <path d="M50 48 L50 68 M40 58 L60 58" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">OxyMed</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home2.html" class="nav-link">Home 2</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Equipment</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="mobile-nav-login"><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-login">Login</a>
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle Theme">
+          <!-- Dynamically loaded by JS -->
+        </button>
+        <button class="btn-icon" id="rtl-toggle" aria-label="Toggle RTL">RTL</button>
+        <button class="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES HERO SECTION -->
+  <section class="about-hero" style="background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80');">
+    <div class="container">
+      <h1>Our Rental Equipment Catalog</h1>
+      <p>Browse through our broad categories of sanitized, hospital-approved medical devices and furniture available for hire today.</p>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT CATEGORIES GRID -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="equipment-grid">
+        <!-- 1. Oxygen Equipment -->
+        <div class="equipment-card">
+          <div class="equipment-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAlfnZoak5AFs16aM4lzTVStA7DOTDpXHTVATek1GJheje8_YMP2nvWxH&s=10" alt="Oxygen Equipment">
+          </div>
+          <div class="equipment-info">
+            <span class="equipment-category">Category 1</span>
+            <h3 class="equipment-name">Oxygen Equipment</h3>
+            <p class="equipment-desc">
+              Clinical-grade oxygen concentrators (5L/10L) and high-pressure oxygen cylinders. Ideal for patients recovering from respiratory illness or requiring long-term oxygen therapy at home.
+            </p>
+            <div class="equipment-specs">
+              <div class="equipment-spec-item">✓ Concentrators &amp; Cylinders</div>
+              <div class="equipment-spec-item">✓ Fully Sterilized</div>
+            </div>
+            <div class="equipment-btn-wrapper">
+              <a href="contact.html?inquiry=oxygen-equipment" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Mobility Equipment -->
+        <div class="equipment-card">
+          <div class="equipment-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmIsT4iVGHi2__18Lu5wNBTLY_rh1FULC4teI6rqmvAANyu10x1v_1Y_M&s=10" alt="Mobility Equipment">
+          </div>
+          <div class="equipment-info">
+            <span class="equipment-category">Category 2</span>
+            <h3 class="equipment-name">Mobility Equipment</h3>
+            <p class="equipment-desc">
+              Manual wheelchairs, high-powered electric wheelchairs, walkers, crutches, and patient transfer boards. Engineered for safety, reliability, and easy indoor/outdoor navigation.
+            </p>
+            <div class="equipment-specs">
+              <div class="equipment-spec-item">✓ Manual &amp; Electric</div>
+              <div class="equipment-spec-item">✓ Foldable &amp; Lightweight</div>
+            </div>
+            <div class="equipment-btn-wrapper">
+              <a href="contact.html?inquiry=mobility-equipment" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Hospital Furniture -->
+        <div class="equipment-card">
+          <div class="equipment-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6Z7dWeozAtPzmdMjmtATKmCkFRZzMUcvKV1JbFYWgnO2VF43wYGeNS5D&s=10" alt="Hospital Furniture">
+          </div>
+          <div class="equipment-info">
+            <span class="equipment-category">Category 3</span>
+            <h3 class="equipment-name">Hospital Furniture</h3>
+            <p class="equipment-desc">
+              Adjustable mechanical and electrical hospital beds, medical-grade mattresses, IV stands, bedside food tables, and heavy-duty patient lift hoists for patient comfort.
+            </p>
+            <div class="equipment-specs">
+              <div class="equipment-spec-item">✓ Electric &amp; Manual Beds</div>
+              <div class="equipment-spec-item">✓ Accessories Included</div>
+            </div>
+            <div class="equipment-btn-wrapper">
+              <a href="contact.html?inquiry=hospital-furniture" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Respiratory Care -->
+        <div class="equipment-card">
+          <div class="equipment-img-container">
+            <img src="https://media.istockphoto.com/id/1497786387/photo/adult-man-testing-breathing-function-by-spirometry-having-health-problem-diagnosis-of.jpg?s=612x612&w=0&k=20&c=v5wHFGdCIaPOqlHM_6UpeF1OcB-lXDaiD6vd-VM2blw=" alt="Respiratory Care">
+          </div>
+          <div class="equipment-info">
+            <span class="equipment-category">Category 4</span>
+            <h3 class="equipment-name">Respiratory Care</h3>
+            <p class="equipment-desc">
+              Sleep apnea solutions, including auto-adjusting CPAP and BiPAP machines, high-efficiency nebulizers, and respiratory humidifiers. All masks and tubes are brand new for each customer.
+            </p>
+            <div class="equipment-specs">
+              <div class="equipment-spec-item">✓ CPAP &amp; BiPAP</div>
+              <div class="equipment-spec-item">✓ Brand New Masks</div>
+            </div>
+            <div class="equipment-btn-wrapper">
+              <a href="contact.html?inquiry=respiratory-care" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Patient Monitoring Devices -->
+        <div class="equipment-card">
+          <div class="equipment-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSllvt2HaQlwArIvCrtfn3kD7OqpBi8N4wXDN1zIvtanc-FBXy2UufvAIPF&s=10" alt="Patient Monitoring Devices">
+          </div>
+          <div class="equipment-info">
+            <span class="equipment-category">Category 5</span>
+            <h3 class="equipment-name">Patient Monitoring Devices</h3>
+            <p class="equipment-desc">
+              High-accuracy Multi-Para monitors tracking heart rate, ECG, blood pressure, temperature, and SpO2. Essential for critical homecare and recovery monitoring.
+            </p>
+            <div class="equipment-specs">
+              <div class="equipment-spec-item">✓ Multi-Parameter Tracking</div>
+              <div class="equipment-spec-item">✓ Audible &amp; Visual Alarms</div>
+            </div>
+            <div class="equipment-btn-wrapper">
+              <a href="contact.html?inquiry=patient-monitoring" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Home Care Equipment -->
+        <div class="equipment-card">
+          <div class="equipment-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR90LkQ-38Z2q9g-9QDASgqft6gqkErielP2xqmi5wQxwO0Qv7LxNneMhU&s=10" alt="Home Care Equipment">
+          </div>
+          <div class="equipment-info">
+            <span class="equipment-category">Category 6</span>
+            <h3 class="equipment-name">Home Care Equipment</h3>
+            <p class="equipment-desc">
+              Suction machines, enteral feeding pumps, DVT pumps, oxygen concentrator accessories, and patient lift scales to support advanced clinical homecare.
+            </p>
+            <div class="equipment-specs">
+              <div class="equipment-spec-item">✓ Suction &amp; Feeding Pumps</div>
+              <div class="equipment-spec-item">✓ Setup Assistance</div>
+            </div>
+            <div class="equipment-btn-wrapper">
+              <a href="contact.html?inquiry=home-care-equipment" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY & SAFETY STANDARDS (Unique Section 1) -->
+  <section class="section-padding" style="background-color: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Clinical Grade</span>
+        <h2 class="section-title">Quality &amp; Safety Standards</h2>
+        <p class="section-desc">Every piece of equipment undergoes a strict 5-step sanitization and biomedical calibration process before arriving at your home.</p>
+      </div>
+      <div class="safety-grid">
+        <div class="safety-step">
+          <div class="safety-icon">🧼</div>
+          <h4>1. Deep Cleaning</h4>
+          <p>Surface-level chemical washing to remove all physical debris and dust.</p>
+        </div>
+        <div class="safety-step">
+          <div class="safety-icon">🦠</div>
+          <h4>2. UV Sterilization</h4>
+          <p>Exposure to medical-grade UV-C light to eradicate 99.9% of bacteria and viruses.</p>
+        </div>
+        <div class="safety-step">
+          <div class="safety-icon">⚙️</div>
+          <h4>3. Biomedical Testing</h4>
+          <p>Pressure, flow rate, and electrical safety testing by certified technicians.</p>
+        </div>
+        <div class="safety-step">
+          <div class="safety-icon">📦</div>
+          <h4>4. Vacuum Sealing</h4>
+          <p>Accessories like masks, tubes, and filters are provided brand-new and sealed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY & SETUP ADVANTAGE (Unique Section with Image) -->
+  <section class="section-padding" style="background-color: var(--bg-body); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="content-column" style="display: flex; flex-direction: column; justify-content: center; gap: 1.25rem;">
+          <span class="section-subtitle">OxyMed Express</span>
+          <h2 class="section-title" style="text-align: start; margin-bottom: 0.5rem; font-size: 2.2rem;">Express 4-Hour Delivery &amp; Professional Setup</h2>
+          <p style="color: var(--text-muted); line-height: 1.7;">
+            We don't just drop off boxes at your door. Our dedicated logistics team and certified biomedical technicians ensure that your rented equipment is safely delivered, fully assembled, and operational in your home within hours.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin: 0.5rem 0 1.5rem 0;">
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600; color: var(--text-main);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="arrow-right"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Free On-Site Assembly &amp; Operational Calibration
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600; color: var(--text-main);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="arrow-right"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Patient &amp; Caregiver Operational Training
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-weight: 600; color: var(--text-main);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="arrow-right"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              24/7 Technical Support Helpline &amp; Standby Replacements
+            </li>
+          </ul>
+          <div>
+            <a href="contact.html?inquiry=express-delivery" class="btn btn-primary">Book Express Delivery</a>
+          </div>
+        </div>
+        <div class="image-column">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Professional biomedical equipment calibration and setup">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEXIBLE RENTAL PLANS (Unique Section 2) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Rental Options</span>
+        <h2 class="section-title">Flexible Rental Plans</h2>
+        <p class="section-desc">Choose a plan that fits your recovery timeline. Extend or cancel anytime with pro-rated billing.</p>
+      </div>
+      <div class="rental-plans-flex">
+        <div class="rental-plan-box">
+          <div class="rp-duration">Daily</div>
+          <p class="rp-desc">Ideal for short-term recovery or temporary visitors.</p>
+          <ul class="rp-features">
+             <li>✓ No minimum commitment</li>
+             <li>✓ Standard delivery rate</li>
+             <li>✓ Pay per day</li>
+          </ul>
+        </div>
+        <div class="rental-plan-box rp-featured">
+          <div class="rp-badge">Most Popular</div>
+          <div class="rp-duration">Monthly</div>
+          <p class="rp-desc">Perfect for post-surgery and chronic care at home.</p>
+          <ul class="rp-features">
+             <li>✓ Up to 40% discount</li>
+             <li>✓ Free maintenance check</li>
+             <li>✓ Zero deposit</li>
+          </ul>
+        </div>
+        <div class="rental-plan-box">
+          <div class="rp-duration">Long-Term (3m+)</div>
+          <p class="rp-desc">For chronic respiratory or prolonged mobility needs.</p>
+          <ul class="rp-features">
+             <li>✓ Lowest daily rate</li>
+             <li>✓ Free monthly servicing</li>
+             <li>✓ Free consumable replacement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="container section-padding" style="padding-top: 0;">
+    <div class="cta-section">
+      <div class="cta-flex">
+        <div class="cta-content">
+          <h2 class="cta-title">Not Sure Which Equipment fits?</h2>
+          <p class="cta-desc">
+            Speak to our certified clinical advisors. We will help determine the exact configurations matching your doctor's prescription.
+          </p>
+        </div>
+        <div class="cta-btn-wrapper">
+          <a href="tel:+18005550199" class="btn btn-call">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Call Now to Book
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+              <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8" fill="none"/>
+              <path d="M50 20 C65 40 75 55 75 68 C75 80 64 90 50 90 C36 90 25 80 25 68 C25 55 35 40 50 20 Z" fill="var(--secondary)" opacity="0.85"/>
+              <path d="M50 48 L50 68 M40 58 L60 58" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-name" style="background: linear-gradient(135deg, #fff, var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">OxyMed</span>
+          </a>
+          <p class="footer-brand-text">
+            Your trusted partner in medical grade equipment rentals. Providing high-quality oxygen concentrators, hospital beds, mobility aids, and respiratory care products directly to your doorstep.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Rental Pricing</a></li>
+            <li><a href="blog.html">Health Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Equipment</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Oxygen Concentrators</a></li>
+            <li><a href="services.html">Oxygen Cylinders</a></li>
+            <li><a href="services.html">Hospital Beds</a></li>
+            <li><a href="services.html">CPAP/BiPAP Machines</a></li>
+            <li><a href="services.html">Wheelchairs &amp; Mobility</a></li>
+            <li><a href="services.html">Patient Monitors</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <p>123 Healthcare Blvd, MedCity,<br>Chennai - 600001</p>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <p>Toll-Free: 1-800-555-0199<br>Local: +91 44 5555 0199</p>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <p>rentals@oxygenmedrentals.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OxyMed. All rights reserved.</p>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Register</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
