@@ -837,6 +837,11 @@ button {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+  .coverage-content .section-subtitle,
+  .coverage-content .section-title,
+  .coverage-content .section-desc {
+    text-align: center;
+  }
 }
 
 /* ==========================================================================
@@ -890,8 +895,10 @@ button {
 
 .testimonial-user {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  text-align: center;
+  gap: 0.75rem;
   margin-top: auto;
 }
 
@@ -1482,6 +1489,10 @@ button {
   flex-grow: 1;
 }
 
+.blog-info > div:last-child {
+  text-align: center;
+}
+
 /* ==========================================================================
    Contact Page & Form Components
    ========================================================================== */
@@ -1535,6 +1546,11 @@ button {
   flex-shrink: 0;
 }
 
+.contact-text {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
 .contact-text h4 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
@@ -1558,6 +1574,19 @@ button {
 @media (max-width: 640px) {
   .form-card {
     padding: 2rem 1.5rem;
+  }
+  .contact-details-box {
+    padding: 1.75rem 1.25rem;
+  }
+  .contact-item {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  .contact-text p {
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
 
@@ -1691,8 +1720,9 @@ button {
 }
 
 .auth-header .logo-link {
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .auth-title {
@@ -1866,6 +1896,11 @@ button {
   z-index: 2;
   color: #fff;
   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .h2-hero-title {
@@ -1884,12 +1919,40 @@ button {
 
 .h2-hero-actions {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 3.5rem;
 }
 
+.h2-hero-actions .btn-call {
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  color: #fff;
+}
+
+.h2-hero-actions .btn-call:hover {
+  background-color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--secondary-rgb), 0.25);
+}
+
+.h2-hero-actions .btn-outline {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.h2-hero-actions .btn-outline:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
 .h2-hero-badges {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -2008,7 +2071,7 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem auto;
 }
 
 .why-card h4 {
@@ -2140,19 +2203,52 @@ button {
 }
 
 @media (max-width: 1024px) {
+  .h2-hero {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 5rem;
+    min-height: auto;
+  }
   .h2-hero-title { font-size: 3rem; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .insurance-partners-grid { grid-template-columns: repeat(3, 1fr); }
   .h2-emergency-content { flex-direction: column; text-align: center; }
   .hiw-connector { display: none; }
   .hiw-grid { flex-direction: column; }
+  
+  /* About Page - Our Story & Our Standards Centering */
+  .our-story-section .about-grid > div:first-child,
+  .our-standards-section .content-column {
+    text-align: center;
+  }
+  .our-standards-section .content-column {
+    align-items: center;
+  }
+
+  /* Services Page - OxyMed Express Section Centering */
+  .oxymed-express-section .content-column {
+    text-align: center;
+    align-items: center;
+  }
+  .oxymed-express-section .content-column ul {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 @media (max-width: 640px) {
+  .h2-hero {
+    padding-bottom: 6.5rem;
+  }
   .h2-hero-title { font-size: 2.25rem; }
   .h2-hero-actions { flex-direction: column; width: 100%; }
   .why-grid { grid-template-columns: 1fr; }
-  .insurance-partners-grid { grid-template-columns: 1fr 1fr; }
+  .insurance-partners-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .ins-card {
+    padding: 1.25rem;
+  }
 }
 /* ==========================================================================
    EQUIPMENT (SERVICES) PAGE SPECIFIC STYLES
@@ -2401,6 +2497,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* Responsive adjustments */
@@ -2415,6 +2512,7 @@ button {
     padding: 3rem 2rem;
   }
   .corporate-image {
+    width: 100%;
     min-height: 300px;
   }
 }
@@ -2597,8 +2695,61 @@ button {
 @media (max-width: 1024px) {
   .mobile-nav-login {
     display: block !important;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  .mobile-nav-login a.nav-link {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: #ffffff !important;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: none !important;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
+  }
+  .mobile-nav-login a.nav-link:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(var(--primary-rgb), 0.3);
+  }
+  .mobile-nav-login a.nav-link::after {
+    display: none !important;
   }
   .nav-actions .btn-login {
     display: none !important;
+  }
+}
+
+/* Ensure all H1 and H2 headings have the same font size across all pages */
+h1, h2,
+.hero-title,
+.h2-hero-title,
+.about-hero h1,
+.section-title,
+.cta-title,
+.corporate-title,
+.error-title,
+.auth-title {
+  font-size: 2.5rem !important;
+}
+
+@media (max-width: 640px) {
+  h1, h2,
+  .hero-title,
+  .h2-hero-title,
+  .about-hero h1,
+  .section-title,
+  .cta-title,
+  .corporate-title,
+  .error-title,
+  .auth-title {
+    font-size: 2.0rem !important;
   }
 }

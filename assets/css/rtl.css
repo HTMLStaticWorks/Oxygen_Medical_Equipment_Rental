@@ -72,4 +72,10 @@
   transform: scaleX(-1);
 }
 
+/* Featured pricing card badge RTL alignment */
+[dir="rtl"] .pricing-card.featured::before {
+  right: auto;
+  left: 1.25rem;
+}
+
 /* Form layout adjustment if columns need direct swap (CSS Grid handles this automatically with direction: rtl) */
